@@ -1,0 +1,12 @@
+.env
+.env.example
+.git/
+__pycache__/
+*.pyc
+*.pyo
+README.md
+.gitignore
+.dockerignore
+docker-compose.yml
+logs/
+data/

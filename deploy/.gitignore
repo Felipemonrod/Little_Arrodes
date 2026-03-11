@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ambiente
+.env
+
+# Logs e dados persistidos
+logs/
+data/
+
+# IDE
+.vscode/
+.idea/

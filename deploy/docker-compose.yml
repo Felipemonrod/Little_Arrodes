@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  arrodes:
+    build: .
+    container_name: little_arrodes_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Persistência de dados de uso da API (sobrevive a rebuilds)
+      - ./data:/bot/data
+      # Persistência de logs
+      - ./logs:/bot/logs
