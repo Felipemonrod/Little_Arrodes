@@ -1,0 +1,15 @@
+services:
+  arrodes:
+    build: .
+    container_name: arrodes_unified
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - MODE=${MODE:-combined}
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    # Porta exposta apenas se modo combined (API interna)
+    # ports:
+    #   - "8080:8080"

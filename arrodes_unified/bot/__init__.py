@@ -1,0 +1,1 @@
+"""Modulo do Bot Discord."""
